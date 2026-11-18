@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aarón Suárez · Desarrollador Frontend Angular</title>
+  <meta name="description" content="Portafolio de Aarón Suárez, desarrollador frontend con Angular. Proyectos publicados con IA, tiempo real y pruebas automáticas, con demo en línea y código abierto.">
+  <meta name="author" content="Aarón Suárez">
+  <link rel="canonical" href="https://aaronsuarezpe.github.io/">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:title" content="Aarón Suárez · Desarrollador Frontend Angular">
+  <meta property="og:description" content="Proyectos con Angular 19, .NET 9 e IA: demos en línea y código en GitHub.">
+  <meta property="og:url" content="https://aaronsuarezpe.github.io/">
+  <meta property="og:image" content="https://aaronsuarezpe.github.io/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="barra">
+    <div class="contenedor barra__fila">
+      <a class="marca" href="#inicio" aria-label="Aarón Suárez, inicio">
+        <span class="marca__sello" aria-hidden="true">AS</span>
+        <span>Aarón Suárez</span>
+      </a>
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="portada">
+      <div class="contenedor portada__fila">
+        <div class="portada__texto">
+          <p class="etiqueta">Lima, Perú · Disponible para trabajo remoto</p>
+          <h1>Desarrollador Frontend<br><span class="resalte">con Angular</span></h1>
+          <p class="portada__resumen">
+            Construyo aplicaciones web empresariales con Angular, TypeScript y APIs REST, y las conecto con
+            inteligencia artificial cuando aporta valor. Aquí están tres proyectos completos, publicados y con
+            pruebas automáticas.
+          </p>
+          <div class="acciones">
+            <a class="boton boton--principal" href="#proyectos">Ver proyectos</a>
+            <a class="boton" href="https://www.linkedin.com/in/aaron-suarez-urbina" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="boton" href="https://github.com/AaronSuarezPE" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <ul class="cifras" aria-label="Resumen">
+          <li><strong>3</strong><span>proyectos completos</span></li>
+          <li><strong>Angular 19</strong><span>y .NET 9</span></li>
+          <li><strong>2 años</strong><span>en productos reales</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="proyectos" class="seccion">
+      <div class="contenedor">
+        <h2>Proyectos</h2>
+        <p class="seccion__intro">
+          Cada proyecto incluye interfaz, API, base de datos y documentación. Se pueden probar en línea sin registrarse.
+        </p>
+
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <header>
+              <h3>DocuIA</h3>
+              <p class="tarjeta__lema">Lee tus documentos con inteligencia artificial</p>
+            </header>
+            <p>
+              Subes una factura, un contrato o una constancia (PDF, PNG o JPG). La IA extrae los datos clave,
+              tú los revisas y corriges, y después puedes hacerle preguntas al documento en un chat.
+            </p>
+            <ul class="puntos">
+              <li>Integración con Gemini y salida estructurada, con defensa ante instrucciones ocultas en el documento</li>
+              <li>Archivos validados por su firma real, no solo por la extensión</li>
+              <li>Sesión con JWT, guards e interceptor; formularios con validación completa</li>
+            </ul>
+            <ul class="etiquetas" aria-label="Tecnologías">
+              <li>Angular 19</li><li>Angular Material</li><li>.NET 9</li><li>SQL Server</li><li>Gemini</li>
+            </ul>
+            <div class="enlaces">
+              <a class="boton boton--principal" href="https://docuia.pages.dev" target="_blank" rel="noopener">Probar la demo</a>
+              <a class="boton" href="https://github.com/AaronSuarezPE/Portafolio_Documentos_IA" target="_blank" rel="noopener">Código</a>
+              <a class="boton" href="https://asportafolioproy01.runasp.net" target="_blank" rel="noopener">API (Swagger)</a>
+            </div>
+            <p class="nota">Entra con «Entrar como invitado», sin registro.</p>
+          </article>
+
+          <article class="tarjeta">
+            <header>
+              <h3>RendiGastos</h3>
+              <p class="tarjeta__lema">Rendición de gastos con aprobación</p>
+            </header>
+            <p>
+              Cada persona registra sus gastos con su comprobante, los agrupa en una rendición y la envía a su
+              aprobador, que la aprueba o la rechaza con un motivo. Todos reciben avisos en la aplicación y en el dispositivo.
+            </p>
+            <ul class="puntos">
+              <li>Tres roles con permisos verificados en la base de datos en cada acción</li>
+              <li>PWA instalable con avisos push</li>
+              <li>Reglas de negocio en procedimientos almacenados: límites, fechas y duplicados</li>
+            </ul>
+            <ul class="etiquetas" aria-label="Tecnologías">
+              <li>Angular 19</li><li>PWA</li><li>.NET 9</li><li>SQL Server</li><li>Web Push</li>
+            </ul>
+            <div class="enlaces">
+              <a class="boton boton--principal" href="https://rendigastos.pages.dev" target="_blank" rel="noopener">Probar la demo</a>
+              <a class="boton" href="https://github.com/AaronSuarezPE/Portafolio_RendiGastos" target="_blank" rel="noopener">Código</a>
+              <a class="boton" href="https://asportafolioproy02.runasp.net" target="_blank" rel="noopener">API (Swagger)</a>
+            </div>
+            <p class="nota">Elige Empleado, Aprobador o Administrador con un clic.</p>
+          </article>
+
+          <article class="tarjeta tarjeta--pendiente">
+            <header>
+              <h3>PanelIoT <span class="insignia">Próximamente</span></h3>
+              <p class="tarjeta__lema">Panel en vivo de sensores con alertas</p>
+            </header>
+            <p>
+              Temperatura, humedad, consumo eléctrico y vibración llegan al navegador apenas se miden, sin recargar.
+              Cuando un sensor sigue fuera de rango se abre una alerta, un operador la reconoce y se cierra sola al normalizarse.
+            </p>
+            <ul class="puntos">
+              <li>Tiempo real con SignalR y reconexión automática</li>
+              <li>Gráficos propios en SVG, sin librerías de pago</li>
+              <li>Alertas sin falsas alarmas, con la regla en la base de datos</li>
+            </ul>
+            <ul class="etiquetas" aria-label="Tecnologías">
+              <li>Angular 19</li><li>SignalR</li><li>.NET 9</li><li>SQL Server</li>
+            </ul>
+            <p class="nota">Terminado y probado; en proceso de publicación.</p>
+          </article>
+        </div>
+
+        <aside class="calidad" aria-label="Calidad del código">
+          <h3>Pruebas en todos los proyectos</h3>
+          <p>
+            Cada uno se valida con pruebas unitarias y de integración, ESLint y analizadores de .NET, pruebas
+            de mutación con Stryker (más de 95 % en backend) y pruebas de punta a punta con Playwright.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="habilidades" class="seccion seccion--clara">
+      <div class="contenedor">
+        <h2>Habilidades</h2>
+        <div class="columnas">
+          <div>
+            <h3>Frontend</h3>
+            <ul class="etiquetas">
+              <li>Angular 14 a 19</li><li>TypeScript</li><li>RxJS</li><li>Angular Material</li>
+              <li>Bootstrap</li><li>Diseño responsivo</li><li>Formularios dinámicos</li><li>Accesibilidad</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Integración y datos</h3>
+            <ul class="etiquetas">
+              <li>APIs REST</li><li>JSON</li><li>JWT</li><li>SignalR</li><li>C# y .NET</li><li>SQL Server</li><li>IA generativa</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Herramientas</h3>
+            <ul class="etiquetas">
+              <li>Git y GitHub</li><li>Postman</li><li>Figma</li><li>VS Code</li><li>Playwright</li><li>Android y notificaciones push</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="seccion">
+      <div class="contenedor">
+        <h2>Experiencia</h2>
+
+        <article class="linea">
+          <header>
+            <h3>Frontend Developer · NETESA</h3>
+            <p class="linea__fecha">Enero 2024 – octubre 2026 · Remoto</p>
+          </header>
+          <ul class="puntos">
+            <li>Interfaces con Angular, TypeScript y Angular Material para NodLex, una plataforma de gestión jurídica con IA: expedientes, clientes, procesos y documentos.</li>
+            <li>Componentes reutilizables, formularios dinámicos, validaciones, permisos y manejo de estados.</li>
+            <li>Integración de servicios REST y de módulos con IA que procesan documentos, imágenes y audios.</li>
+            <li>Adaptación de aplicaciones Angular a Android, con notificaciones push.</li>
+            <li>Manuales técnicos y de usuario, y trabajo junto a backend, análisis funcional y calidad.</li>
+          </ul>
+        </article>
+
+        <div class="columnas columnas--dos">
+          <div>
+            <h3>Formación</h3>
+            <ul class="lista">
+              <li><strong>Ingeniería Mecatrónica</strong><br>Universidad Tecnológica del Perú</li>
+              <li><strong>Computación e Informática</strong><br>Instituto Luis Negreiros Vega</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Certificaciones e idiomas</h3>
+            <ul class="lista">
+              <li><strong>Angular 19 y React JS</strong>, CETI · 150 horas · 2025</li>
+              <li><strong>Web Application y Angular 19</strong>, Galaxy Training</li>
+              <li><strong>Inteligencia Artificial</strong>, CenteIA Education · 2026</li>
+              <li>Español nativo · Inglés básico (lectura técnica)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="seccion seccion--clara">
+      <div class="contenedor contacto">
+        <h2>Contacto</h2>
+        <p class="seccion__intro">
+          Busco una oportunidad como desarrollador frontend o Angular. Escríbeme por LinkedIn o por correo.
+        </p>
+        <div class="acciones acciones--centro">
+          <a class="boton boton--principal" href="https://www.linkedin.com/in/aaron-suarez-urbina" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="boton" href="mailto:aaron.suarez.pe@gmail.com">aaron.suarez.pe@gmail.com</a>
+          <a class="boton" href="https://github.com/AaronSuarezPE" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p>© 2026 Aarón Suárez · Lima, Perú</p>
+    </div>
+  </footer>
+</body>
+</html>
